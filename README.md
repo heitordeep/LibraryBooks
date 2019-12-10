@@ -7,14 +7,14 @@ Para iniciar o projeto você precisa ter instalado na sua maquina o pyenv e util
 ## Inicialização:
 
 
-1° Após clonar o projeto basta digitar.
+1° Inicialização do CRUD.
+
  ```shell
  $ source venv/bin/activate
  ```
-Não se preocupe, no diretório possui a pasta da virtualização venv.
 
-
-2° Você precisa iniciar o servidor.
+2° Iniciar o servidor.
+  
   ```shell
   $ python manage.py runserver
   ```
@@ -23,7 +23,7 @@ Não se preocupe, no diretório possui a pasta da virtualização venv.
 
 Após digitar os comandos a cima, basta acessar a URL: http://127.0.0.1:8000/books/login
 
-    Login: visitante
+    Login: heitordeep 
     Senha: 123@2019
 
 ## Funcionalidades:
