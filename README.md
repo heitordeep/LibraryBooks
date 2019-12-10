@@ -2,7 +2,7 @@
 ## CRUD de Sistema de Biblioteca. Utilizado: Python 3.7.3, Django 2.2.6 e SQLite 3
 
 
-Para iniciar o projeto você precisa ter instalado na sua maquina o pyenv e utilizar a versão 3.7 do Python.
+Para iniciar o projeto você precisa ter instalado na sua maquina o virtualenv e utilizar a versão 3.7 do Python.
 
 ## Inicialização:
 
