@@ -1,0 +1,25 @@
+{% extends 'books/base.html' %}
+
+{% block title %}Cadastro de Categoria{% endblock %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="{{ form.name.id_for_label }}">Nome do livro</label>
+        {{form.name}}
+    </div>
+
+
+    <div class="form-group">
+            <label for="{{ form.category.id_for_label }}">Nome da Categoria</label>
+            {{ form.category }}
+        </div>
+
+    <a href="{% url 'books:index' %}" class="btn btn-danger">Voltar</a>
+    <button class="btn btn-dark linkar">Cadastrar</button>
+</form>
+
+
+{% endblock %}

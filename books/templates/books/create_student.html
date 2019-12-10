@@ -1,0 +1,71 @@
+{% extends 'books/base.html' %}
+
+{% block title %}Cadastrar Estudante{% endblock %}
+
+{% block content %}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#id_cpf").mask("000.000.000-00");
+    });
+
+    $(document).ready(function () {
+        $("#id_tel").mask("(00) 00000-0000");
+    });
+
+</script>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="card-body" id="cor-fundo">
+                <h5 class="card-title"><i class="fas fa-plus-square"></i> Cadastro</h5>
+                <p class="card-text">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+
+                            <label for="{{ form.name.id_for_label }}">Nome do Estudante</label>
+                            {{ form.name }}
+                            <br />
+
+                            <label for="{{ form.cpf.id_for_label }}">Cpf</label>
+                            {{ form.cpf }}
+                            <br />
+
+                            <label for="{{ form.birth_date.id_for_label }}">Data de Nascimento</label>
+                            {{ form.birth_date }}
+
+                            <br />
+
+                            <label for="{{ form.city.id_for_label }}">Cidade</label>
+                            {{ form.city }}
+                            <br />
+
+                            <label for="{{ form.email.id_for_label }}">E-mail</label>
+                            {{ form.email }}
+                            <br />
+
+                            <label for="{{ form.tel.id_for_label }}">Telefone</label>
+                            {{ form.tel }}
+                            <br />
+
+                            <label for="{{ form.book.id_for_label }}">Livros Disponíveis</label>
+                            {{ form.book }}
+                            <br />
+
+
+                            <a href="{% url 'books:index' %}" class="btn btn-danger linkar">Voltar</a>
+                            <button class="btn btn-dark linkar">Cadastrar</button>
+
+                        </div>
+                    </form>
+                </p>
+            </div>
+        </div>
+
+
+
+
+        {% endblock %}

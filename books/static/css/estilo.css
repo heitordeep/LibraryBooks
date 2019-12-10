@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(230deg,#9b5cbf, #e0d1da);
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', 'sans-serif';
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;    
+}
+
+
+
+.linkar {
+    transition: 1.4s;
+}
+
+.linkar:hover {
+    transition: 1.4s;
+    padding-left: 20px;
+    color: white;
+}
+
+.btn-dark{
+    border: none;
+    background-color:#696bb9;
+    color: white;
+    font-weight: bold;
+}
+
+#id_username, #id_password {
+     width: 700px; 
+     margin: auto;
+    
+}
+
+#cor-fundo {
+    background: linear-gradient(120deg,#e7e3e9, #cabfc9);
+}
+
+h3 {
+    color: white;
+}

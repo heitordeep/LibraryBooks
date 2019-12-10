@@ -1,0 +1,26 @@
+{% extends 'books/base.html' %}
+
+{% block title %}Detalhes do Estudante {{ student.name }}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-body" id="cor-fundo">
+                    <h5 class="card-title"><i class="fas fa-user"></i> {{ student.name|title }}</h5>
+                    <p class="card-text">
+                        ID: <code>{{ student.id }}</code><br />
+                        Livro Alugado: <code>{{ student.book|title }}</code><br />
+                        Nascido em: <code>{{ student.birth_date }}</code><br />
+                        Idade: <code>{{ result }} Anos</code><br />
+                        E-mail: <code>{{ student.email}}</code><br />
+                        Telefone: <code>{{ student.tel}}</code><br />
+                        Cidade: <code>{{ student.city}}</code><br />
+                    </p>
+                </div>
+                <a href="{% url 'books:index' %}" class="btn btn-danger linkar" title="Voltar">Voltar</a>
+            </div>
+        </div>
+{% endblock %}

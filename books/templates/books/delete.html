@@ -1,0 +1,47 @@
+{% extends 'books/base.html' %}
+
+{% block title %}Excluir {{ student.name|title }}{% endblock %}
+
+{% block content %}
+<style>
+    .alert-heading {
+        font-size: 65px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+</style>
+
+
+<form method="post">
+    {% csrf_token %}
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card text-center">
+                <div class="card-body" id="cor-fundo">
+                    <h5 class="card-title">
+                        <h4 class="alert-heading">Atenção</h4>
+                        <p class="card-text">
+
+                            <p>Você tem certeza que deseja excluir o estudante <strong>{{ student.name|title }}
+                                    ?</strong></p>
+                            <hr>
+                            <a class="btn btn-dark linkar" href="{% url 'books:index' %}"><i
+                                    class="fas fa-arrow-circle-left"></i> Cancelar</a>
+
+                            <button style="margin: 10px;" class="btn btn-danger linkar"><i class="fas fa-trash"></i>
+                                Excluir</button>
+                            <p>
+                                <p class="mb-0">Após exclusão, não será possível recuperar os dados.</p>
+                            </p>
+                </div>
+            
+            </div>
+</form>
+
+
+
+{% endblock %}
