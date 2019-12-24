@@ -6,14 +6,18 @@ Para iniciar o projeto você precisa ter instalado na sua maquina o virtualenv e
 
 ## Inicialização:
 
+1° Instalação.
+```shell
+ $ pip install -r requirements.txt
+```
 
-1° Inicialização do CRUD.
+2° Inicialização do CRUD.
 
  ```shell
  $ source venv/bin/activate
  ```
 
-2° Iniciar o servidor.
+3° Iniciar o servidor.
   
   ```shell
   $ python manage.py runserver
