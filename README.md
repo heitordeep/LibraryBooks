@@ -30,6 +30,11 @@ Após digitar os comandos a cima, basta acessar a URL: http://127.0.0.1:8000/boo
     Login: heitordeep 
     Senha: 123@2019
 
+Ou você pode fazer um teste online neste link: https://library-study.herokuapp.com/login/
+
+    Login: visitante
+    Senha: admin@123
+
 ## Funcionalidades:
 
 Após logado, você será redirecionado para a página home do site, onde você terá a visão de todos os estudantes que alugaram os livros da biblioteca.
