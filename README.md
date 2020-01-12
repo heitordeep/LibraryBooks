@@ -35,6 +35,11 @@ Ou você pode fazer um teste online neste link: https://library-study.herokuapp.
     Login: visitante
     Senha: admin@123
 
+Ou você pode fazer um teste online neste link: https://library-study.herokuapp.com/login/
+
+    Login: visitante
+    Senha: admin@123
+
 ## Funcionalidades:
 
 Após logado, você será redirecionado para a página home do site, onde você terá a visão de todos os estudantes que alugaram os livros da biblioteca.
