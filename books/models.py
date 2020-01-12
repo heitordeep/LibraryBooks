@@ -38,7 +38,7 @@ class Student(models.Model):
 
     class Meta:
         verbose_name = 'Estudante'
-        ordering = ['-registration_date']
+        ordering = ['-id']
 
     def __str__(self):
         return self.name

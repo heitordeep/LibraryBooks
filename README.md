@@ -27,8 +27,13 @@ Para iniciar o projeto você precisa ter instalado na sua maquina o virtualenv e
 
 Após digitar os comandos a cima, basta acessar a URL: http://127.0.0.1:8000/books/login
 
-    Login: heitordeep 
-    Senha: 123@2019
+    Login: visitante 
+    Senha: admin@123
+
+Ou você pode fazer um teste online neste link: https://library-study.herokuapp.com/login/
+
+    Login: visitante
+    Senha: admin@123
 
 ## Funcionalidades:
 
